@@ -6,8 +6,8 @@ public class Guerrero extends Criatura {
     private String arma;
 
     //Se creo el metodo constructor atrayendo las variables de la clase "Criatura" junto con la variable "arma" de la clase "Guerrero".
-    public Guerrero(String arma, String nombre, int salud, int fuerza) {
-        super(nombre, salud, fuerza);
+    public Guerrero(String arma, String nombre) {
+        super(nombre, 100, 25);
         this.arma = arma;
     }
 
@@ -24,7 +24,7 @@ public class Guerrero extends Criatura {
     @Override
     public void defender(int daño) {
         setSalud(getSalud() - daño);
-        System.out.println(getNombre() + " intenta bloquear el ataque del " + arma + " causando " + daño + " de daño.");
+        System.out.println("\n" + getNombre() + " intenta bloquear el ataque del " + arma + " causando " + daño + " de dano y queda con una vida de " + getSalud());
 
     }
 
