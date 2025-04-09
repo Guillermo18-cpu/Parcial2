@@ -22,14 +22,14 @@ public class Mago extends Criatura {
     @Override
     public void atacar(Criatura objetivo) {
         int daño = getFuerza();
-        System.out.println(getNombre() + " ataca con su " + hechizo + " a " + objetivo.getNombre());
+        System.out.println("-" + getNombre() + " ataca con su " + hechizo + " a " + objetivo.getNombre());
         objetivo.defender(daño);
     }
 
     @Override
     public void defender(int daño) {
         super.setSalud(super.getSalud() - daño);
-        System.out.println(getNombre() + " bloquea el ataque con su hechizo, pero no lo logra y recibe " + daño + " de dano y queda con una vida de " + getSalud());
+        System.out.println("-" + getNombre() + " bloquea el ataque con su hechizo, pero no lo logra y recibe " + daño + " de dano y queda con una vida de " + getSalud());
     }
 
 }
