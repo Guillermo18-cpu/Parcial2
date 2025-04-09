@@ -4,6 +4,11 @@ public abstract class Criatura {
     private String nombre;
     private int salud =100, fuerza= 5;
 
+    public Criatura(String nombre, int salud, int fuerza) {
+        this.nombre = nombre;
+        this.salud = salud;
+        this.fuerza = fuerza;
+    }
     //getters y setters para poder llamar las variables de esta clase en otras.
     public String getNombre() {
         return nombre;
