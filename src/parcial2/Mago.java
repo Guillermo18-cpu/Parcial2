@@ -6,8 +6,8 @@ public class Mago extends Criatura {
     private String hechizo;
 
     // Se creo el metodod constructor extrayendo las variables de la clase Criatura
-    public Mago(String hechizo, String nombre, int salud, int fuerza) {
-        super(nombre, salud, fuerza);
+    public Mago(String hechizo, String nombre) {
+        super(nombre, 100, 25);
         this.hechizo = hechizo;
     }
 
@@ -29,9 +29,7 @@ public class Mago extends Criatura {
     @Override
     public void defender(int daño) {
         super.setSalud(super.getSalud() - daño);
-        System.out.println(getNombre() + "bloquea el ataque con su hechizo, pero no lo logra y recibe " + daño + " de daño.");
+        System.out.println(getNombre() + " bloquea el ataque con su hechizo, pero no lo logra y recibe " + daño + " de dano y queda con una vida de " + getSalud());
     }
 
 }
-
-
