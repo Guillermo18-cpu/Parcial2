@@ -1,6 +1,6 @@
 package parcial2;
 
-public abstract class Dragon extends Criatura {
+public class Dragon extends Criatura {
 
     //Se creo una variable privada tipo String.
     private String escamas;

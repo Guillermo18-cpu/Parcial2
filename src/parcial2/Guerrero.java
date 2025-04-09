@@ -1,6 +1,6 @@
 package parcial2;
 
-public abstract class Guerrero extends Criatura {
+public class Guerrero extends Criatura {
 
     //Se creo una variable privada tipo String.
     private String arma;
