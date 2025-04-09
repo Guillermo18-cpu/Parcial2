@@ -2,7 +2,7 @@ package parcial2;
 public abstract class Criatura {
     //se definen los atributos de la clase abstracta.
     private String nombre;
-    private int salud =100, fuerza= 5;
+    private int salud, fuerza;
 
     public Criatura(String nombre, int salud, int fuerza) {
         this.nombre = nombre;
@@ -33,8 +33,8 @@ public abstract class Criatura {
     public abstract void defender(int daño);
 
     //Validacion para saber si la criatura esta viva y si asi lo es retorna un valor booleano (true or false).
-    public boolean estaViva(int salud) {
-        if (salud > 0) {
+    public boolean estaViva() {
+        if (this.salud > 0) {
             return true;
         }else {
             return false;
