@@ -24,7 +24,7 @@ public class Guerrero extends Criatura {
     @Override
     public void defender(int daño) {
         setSalud(getSalud() - daño);
-        System.out.println("\n" + getNombre() + " intenta bloquear el ataque del " + arma + " causando " + daño + " de dano y queda con una vida de " + getSalud());
+        System.out.println("\n" + "-" + getNombre() + " intenta bloquear el ataque del " + arma + " causando " + daño + " de dano y queda con una vida de " + getSalud());
 
     }
 
@@ -32,7 +32,7 @@ public class Guerrero extends Criatura {
     @Override
     public void atacar(Criatura objetivo) {
         int daño = getFuerza();
-        System.out.println(getNombre() + " ataca con su " + arma + " a " + objetivo.getNombre());
+        System.out.println("-" + getNombre() + " ataca con su " + arma + " a " + objetivo.getNombre());
         objetivo.defender(daño);
     }
 
